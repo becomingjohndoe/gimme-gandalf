@@ -1,5 +1,4 @@
 import "./App.css";
-import Content from "./components/Content";
 import Form from "./components/Form";
 import Hero from "./components/Hero";
 
