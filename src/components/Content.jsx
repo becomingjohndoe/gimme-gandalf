@@ -1,5 +1,3 @@
-import lines from "../constants/lines.jsx";
-
 function updateClipboard(newClip) {
 	navigator.clipboard.writeText(newClip).then(
 		function () {
@@ -18,7 +16,7 @@ function Content({ paragraphs }) {
 				onClick={() => {
 					updateClipboard(
 						paragraphs.map((p) => {
-							return p + "\n" + "\n" + "\n";
+							return p + "\n \n \n";
 						})
 					).join("");
 				}}
