@@ -17,3 +17,34 @@ git clone https://github.com/becomingjohndoe/gimme-gandalf.git
 ```bash
 npm install
 ```
+
+# Usage
+
+```bash
+npm start
+```
+
+# Built With
+
+React.js, Tailwind.css, and Netlify.
+
+# Details
+
+```javasxript
+const getLines = (lines, amount) => {
+		let result = [];
+
+		for (let i = 0; i < amount; i++) {
+			let string = "";
+
+			while (string.length < 280) {
+				let random = Math.floor(Math.random() * lines.docs.length);
+				string += " " + lines.docs[random].dialog;
+			}
+			result[i] = string;
+		}
+		setParagraphs(result);
+	};
+```
+
+To receive the paragraphs, this simple function iterates over the array of lines from the movies and concatenates them into strings of 280 characters or less.
