@@ -30,7 +30,7 @@ React.js, Tailwind.css, and Netlify.
 
 # Details
 
-```javasxript
+```javascript
 const getLines = (lines, amount) => {
 		let result = [];
 
